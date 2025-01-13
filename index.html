@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="setup-container" id="setupWizard">
+        <div class="setup-card">
+            <h1>Create Your Personal Website</h1>
+            <p>Enter your social links to get started</p>
+            
+            <form id="setupForm">
+                <div class="input-group">
+                    <i class="fab fa-linkedin"></i>
+                    <input type="url" id="linkedinUrl" placeholder="LinkedIn Profile URL" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fab fa-twitter"></i>
+                    <input type="url" id="twitterUrl" placeholder="Twitter/X Profile URL" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fab fa-github"></i>
+                    <input type="url" id="githubUrl" placeholder="GitHub Profile URL" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-pen"></i>
+                    <textarea id="additionalInfo" placeholder="Additional information or writings (optional)"></textarea>
+                </div>
+
+                <button type="submit" class="generate-btn">
+                    <span>Generate Website</span>
+                    <div class="loader" style="display: none;"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- The personal website content will be loaded here -->
+    <div class="website-container" id="personalWebsite" style="display: none;">
+        <!-- Content will be dynamically inserted here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
